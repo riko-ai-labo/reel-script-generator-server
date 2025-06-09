@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>リール台本ジェネレーター</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>リール台本ジェネレーター</h1>
+      <p class="subtitle">記事内容からSNSリール用の台本を自動生成</p>
+    </header>
+    
+    <main>
+      <div class="input-section">
+        <h2>記事内容を入力</h2>
+        <textarea id="article-content" placeholder="ここに記事の内容をコピー&ペーストしてください..."></textarea>
+
+        <button id="generate-btn">台本を生成する</button>
+        
+        <div class="loading" id="loading">
+          <div class="spinner"></div>
+          <p>生成中です。少々お待ちください...</p>
+        </div>
+        
+        <div class="error-message" id="error-message"></div>
+      </div>
+      
+      <div class="output-section">
+        <h2>生成された台本</h2>
+        <div class="script-container" id="script-container">
+          <div id="frames-container"></div>
+          <button class="copy-btn" id="copy-btn">すべての台本をコピー</button>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <p>© 2025 リール台本ジェネレーター | Powered by Gemini AI</p>
+    </footer>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
